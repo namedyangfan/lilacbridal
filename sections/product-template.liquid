@@ -263,7 +263,7 @@
                     <label class="single-option-radio__label{% if option.name == 'Default' or option.name == 'Title' %} hidden-label{% endif %}"
                       for="ProductSelect-option-{{ forloop.index0 }}">
                        {{ option.name | escape }}:
-                      {% if product.options contains 'Size' %}
+                      {% if product.tags contains 'bride' %}
                         <a class="see-size-chart size-chart-open-popup" href="#size-chart"> See size chart</a>
                       {% endif %}
                     </label>
