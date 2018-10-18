@@ -454,7 +454,8 @@ $bodyFontStack: {{ base_family.family }}, {{ base_family.fallback_families }};
 $bodyFontWeight: {{ base_family.weight }};
 $bodyFontWeightBold: {{ base_family_bold.weight | default: 700 }};
 $bodyFontStyle: {{ base_family.style }};
-$baseFontSize: {{ settings.type_base_size }}; // Henceforth known as 1em
+/* baseFontSize changed by Fan from {{ settings.type_base_size }} */
+$baseFontSize: 20px; // Henceforth known as 1em 
 
 // Accent Font
 $accentFontStack: {{ accent_family.family }}, {{ accent_family.fallback_families }};
