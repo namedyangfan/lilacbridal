@@ -538,8 +538,9 @@ body {
   outline: none;
 }
 
+/*================ Fan change max-width from $sideWidth to 90% ================*/
 .wrapper {
-  max-width: $siteWidth;
+  max-width: 90%;
   margin: 0 auto;
   padding: 0 ($gutter / 2);
 
