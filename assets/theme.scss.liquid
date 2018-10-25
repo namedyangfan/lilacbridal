@@ -2242,7 +2242,8 @@ $shareCountBg: $colorBody;
 }
 
 .hero__text-content {
-  position: relative;
+  position: absolute;
+  top: 62%;
   opacity: 0;
   display: table-cell;
   vertical-align: middle;
@@ -2255,7 +2256,7 @@ $shareCountBg: $colorBody;
   }
 
   @include at-query($min, $large) {
-    padding: 15px 150px;
+    padding: 15px 30px;
   }
 }
 
@@ -2307,7 +2308,7 @@ $shareCountBg: $colorBody;
 
   @include at-query($min, $large) {
     .hero__title {
-      font-size: em(64px);
+      font-size: em(32px);
     }
   }
 }
