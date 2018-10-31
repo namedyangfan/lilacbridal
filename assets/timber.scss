@@ -2448,7 +2448,7 @@ $socialIconFontStack: "icons";
 
 /*================ Module | Site Header ================*/
 .site-header {
-  padding: ($gutter / 5) 0 0;
+  padding: ($gutter / 5) 0 ($gutter / 5);
   background-color: #FFFFFF;
 
   .grid--table {
