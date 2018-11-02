@@ -82,8 +82,8 @@
           {% capture saved_amount %}{{ product.compare_at_price | minus: product.price | money_without_trailing_zeros }}{% endcapture %}
           <p>{{ 'products.general.save_html' | t: saved_amount: saved_amount }}</p>
         </div>
-      {% endif %}
       {% endcomment %}
+      {% endif %}
     </div>
 
     <a href="{{ product.url | within: collection }}" class="grid-product__meta">
