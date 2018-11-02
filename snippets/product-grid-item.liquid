@@ -89,8 +89,7 @@
     <a href="{{ product.url | within: collection }}" class="grid-product__meta">
       <span class="grid-product__title">{{ product.title }}</span>
       <span class="grid-product__price-wrap">        
-        <span class="long-dash">—</span>
-        <span class="grid-product__price">
+        <div class="grid-product__price">
           {% if on_sale %}
             <span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
           {% else %}
@@ -105,7 +104,7 @@
           {% else %}
             {{ product.price | money_without_trailing_zeros }}
           {% endif %}
-        </span>
+        </div>
 
 
         <div class="yotpo bottomLine" id= "category"
