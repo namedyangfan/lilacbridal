@@ -990,10 +990,9 @@ $class-type: unquote(".");
   #{$class-type}#{$namespace}eleven-twelfths { width: 91.666%; }
 }
 
-/*================ Clearfix helper on uniform grids ================*/
+/*================ Clearfix helper on uniform grids (Changed by Fan) ================*/
 @mixin clearfix-helper($namespace:"") {
   .grid-uniform {
-    #{$class-type}#{$namespace}one-half:nth-child(2n+1),
     #{$class-type}#{$namespace}one-third:nth-child(3n+1),
     #{$class-type}#{$namespace}one-quarter:nth-child(4n+1),
     #{$class-type}#{$namespace}one-fifth:nth-child(5n+1),

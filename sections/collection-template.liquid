@@ -1,5 +1,31 @@
 <!-- /templates/collection.liquid -->
-<div id="CollectionSection" data-section-id="{{ section.id }}" data-section-type="collection-template" data-grid-type="{{ section.settings.collection_products_grid }}" style="padding-left:15%; padding-right:15%">
+<style>
+  
+.collection-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .collection-container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .collection-container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .collection-container {
+    width: 1170px;
+  }
+}
+
+</style>
+
+<div id="CollectionSection" data-section-id="{{ section.id }}" data-section-type="collection-template" data-grid-type="{{ section.settings.collection_products_grid }}" class="collection-container">
   {% include 'collection-template' %}
 </div>
 

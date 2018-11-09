@@ -3382,8 +3382,8 @@ button.mfp-arrow {
 }
 
 .grid-product__title {
-  @include bodyFontItalic;
-  font-size: em(floor($baseFontSize * 1.25));  //20px based on 16px base font size
+  // commented out by Fan @include bodyFontItalic;
+  font-size: em(floor($baseFontSize * 1.3));  //20px based on 16px base font size
 }
 
 .grid-product__vendor {
@@ -3394,8 +3394,10 @@ button.mfp-arrow {
 }
 
 .grid-product__price {
-  @include accentFontStack;
-  font-size: em(14px);
+  // commented out by Fan @include accentFontStack;
+  font-family: Bell, serif;
+  font-size: em(16px);
+  color: #8e24aa;
 }
 
 .grid-product__price-min {
