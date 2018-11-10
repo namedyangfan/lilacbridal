@@ -2394,7 +2394,7 @@ theme.Product = (function() {
       var moneyFormat = theme.strings.moneyFormat;
       var variant = evt.variant;
       var translations = theme.strings;
-	  
+    
       if (variant) {
         // Display variant image on featured product
         
@@ -3484,4 +3484,6 @@ $('.size-chart-open-popup').magnificPopup({
   midClick: true
 });
 
-$('.infiniteoptions-container').hide()
+if (variant.title != 'customize') { 
+  $('.infiniteoptions-container').hide();
+}
