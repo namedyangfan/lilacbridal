@@ -72,7 +72,13 @@
         {% when 4 %}
           {% assign footer_column_width = 'large--one-quarter medium--one-half' %}
       {% endcase %}
-
+      
+      <div class="grid__item {{ footer_column_width }}">
+        <center>
+          <img src="https://cdn.shopify.com/s/files/1/0074/8486/6675/files/LogoHQ.png?11336319970222757858" style="width: 15vw; max-width: 150px">
+      </center>
+      </div>
+      
       {% if linklists[section.settings.footer_link_list].links.size > 0 %}
         <div class="grid__item {{ footer_column_width }}">
           <ul class="no-bullets site-footer__linklist">
@@ -181,7 +187,6 @@
             </ul>
         </div>
       {% endif %}
-      
 
     </div>
 

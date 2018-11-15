@@ -255,7 +255,7 @@
             {%- endcapture %}
 
             {% capture "form_id" %}AddToCartForm--{{ section.id }}{%- endcapture %}
-			
+      
             {% form 'product', product, class:form_classes, id:form_id %}
               {% unless product.has_only_default_variant %}
                 {% for option in product.options_with_values %}
@@ -301,7 +301,7 @@
                   </div>
                 {% endfor %}
               {% endunless %}
-            	
+              
               <select name="id" id="ProductSelect" class="product-single__variants no-js">
                 {% for variant in product.variants %}
                   {% if variant.available %}
@@ -359,7 +359,7 @@
               {{ product.description }}
             {% endif %}
           </div>
-			
+      
           {% if section.settings.social_sharing_products %}
             {% include 'social-sharing', share_title: product.title, share_permalink: product.url, share_image: product %}
           {% endif %}
@@ -368,7 +368,7 @@
       </div>
     </div>
   
-  	<div class="yotpo-container left">
+    <div class="yotpo-container left">
       <div class="yotpo yotpo-main-widget" data-product-id="{{ product.id }}" data-name="{{ product.title | escape }}" data-url="{{ shop.url }}{{ product.url }}" data-image-url="{{ product.featured_image | product_img_url: "large" |replace: '?', '%3F' | replace: '&','%26'}}" data-description="{{ product.description | escape }}"></div>
     </div>
       
@@ -378,7 +378,7 @@
         <a href="{{ collection.url }}" class="return-link">&larr; {{ 'products.general.collection_return' | t: collection: collection.title }}</a>
       </div>
     {% endif %}
-	
+  
 
 </div>
 {% unless product.empty == empty %}
@@ -479,7 +479,7 @@
 {% endschema %}
 
 <div id="size-chart" class="mfp-hide">
-{{ pages.size-chart.content }}
+{{ pages.size-guide.content }}
 </div>
 
 <style>
@@ -487,7 +487,7 @@
     border: 2px #555 solid;
     background-color: #ffffff;
     padding: 20px;
-    max-width: 800px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
   };
